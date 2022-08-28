@@ -10,7 +10,7 @@ a{
   text-decoration: none;
   
 }
-body
+.body
 {
   background-color: #fff;
   height: 100vh;
@@ -24,6 +24,18 @@ body
   overflow: hidden;
 
 }
+ /********* HEADER ********************/
+header{
+  background-color: #07a3f7;
+}
+header img{
+  height: 60%;
+  width: 70%;
+  display: flex;
+  margin: auto;
+}
+
+/********* LOGIN-HEADER ********************/
 .container{
   display: flex;
   flex-direction: column;
@@ -39,20 +51,28 @@ body
   background-color: #fff;
  
 }
-/********* HEADER ********************/
+
 header{
   height: 70px;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1e9bde;
+  
   
   
 }
-.header img{
+.login-header{
+  display: flex;
+  background-color: #1e9bde;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+.login-header img{
   height: 40%;
-  width: 70%;
+  width: 60%;
  
 }
 .imguser{
@@ -61,7 +81,7 @@ header{
   padding-right: 50px;
 }
 .imguser img{
-  height: 50px;
+  height: 45px;
   width: 50px;
 }
 /********* USER AND RESTAURANT ********************/
