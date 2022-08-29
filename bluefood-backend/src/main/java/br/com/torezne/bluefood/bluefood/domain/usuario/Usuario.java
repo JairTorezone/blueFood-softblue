@@ -1,12 +1,23 @@
 package br.com.torezne.bluefood.bluefood.domain.usuario;
 
+import java.io.Serializable;
+
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
+
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class Usuario {
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@MappedSuperclass
+public class Usuario implements Serializable{
+	private static final long serialVersionUID = 1L;
 
+	@EqualsAndHashCode.Include
+	@Id
 	private Integer id;
 	
 	private String nome;
